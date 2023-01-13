@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/9ea73b27f9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bookshelf</h1>
+    <header>
+        <nav>
+            <ul class="nav-ul">
+                <li>
+                    <a href="Book_App.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <section class="search">
+                    <input placeholder="Search" id="search-input"/>
+                    <button class="searchButton" id="search-button">Search</button>
+                </section>
+
+                <section class="sort">
+                    <label>Sort by</label>
+                    <select class="sortBy">
+                      <option value="titleaz">Title A-Z</option>
+                      <option value="titleza">Title Z-A</option>
+                     
+                </select>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="" class="book-form">
+            Title:<input type="text" id="title">
+            Author: <input type="text" id="authors">
+            Subject: <input type="text" name="" id="subject">
+            Language: <input type="text" name="" id="language">
+            <input id="save-book" type="button" value="Save" >
+            <section>
+                <span id="favCount">0</span> Favorite Books.
+                <div>
+                    <span  id="nonEnglishCount">0</span> Non English Books.
+                </div> 
+                <button class="favUpdateBtn">Update</button>
+              </section>
+
+        </form>
+        <div id="books">
+        </div>
+    </div>
+    <script src="book-data.js"></script>
+    <script src="BookShelf.js"></script>
+    <script src="Book.js"></script>
+    <script src="Index.js"></script>
+</body>
+</html>
+
+<!--
+    Genaral Code 
+  * Design choices are explained and documented in comments.
+  * DOM elements are styled via CSS.  
+  Add Books
+  * Users can enter book title, author, subjects, language and add new Books.
+  * The Bookshelf instance is updated accordingly.
+  * The Bookshelf instance renders Books accurately.
+  Navigation
+  * A Navigation Bar is included in the web app with links to other parts of the site e.g. 
+  "About", "Contact".
+  * No real information is required. Dummy data or lorum ipsum is fine!
+   Comments 
+  * Users can leave comments no longer than 280 characters on any Book they want. 
+  * Users can press a "Comment" button which reveals a `text` input element.
+  * Users can then type their comment and click "send" to add it to the Book.
+  * Comments should be represented by HTML elements on the page.
+  * The Book and Bookshelf instances are updated accordingly.
+  * The comments persist even if a search or sort rerenders the Books.
+  * Data can be stored locally or in state memory. A database is not required.
+    Alternate Assessment Requirements
+    Note: do not complete any of the following unless assigned by your instructional team
+  * TDD 2 Alternate: `filter` is used to implement a DOM element containing the titles of all Books that have been favorited
+  * TDD 5 Alternate: `reduce` is used to implement a counter on the page of the number of non-English books in the collection 
+    Optional: Registration
+  * Users should not be able to access the book data unless they have registered a new username and password combination. 
+  * After registering, users should be redirected to the Bookshelf Web App where they can see the book data, add books to the bookshelf, etc.
+  * These credentials do not need to be stored in a database and encrypted for sign in later. This is just an exercise to get us closer to real world web applications. 
+-->

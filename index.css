@@ -1,0 +1,84 @@
+h1{
+font-size: 60px;
+text-align: center;
+color: rgb(41, 41, 248);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-ul {
+    display: flex;
+    text-align: center;
+}
+.nav-ul li {
+    list-style: none;
+    flex: 1;
+}
+.nav-ul li a {
+    color: white;
+    padding: 8px;
+    width:120px;
+    background-color: rgb(41, 41, 248);
+    border: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.searchButton {
+    color: white;
+    background-color: rgb(41, 41, 248);
+    border: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sort{
+    width: 25vw; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    display: flex;
+}
+#books {
+    
+    width:50vw;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.book{
+    text-align: center;
+    width: 245px;
+    padding: 5px;
+    border: 2px solid rgb(131, 131, 131);
+}
+.book-form{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    background-color:aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.book-form input{
+    margin-bottom: 14px;
+}
+
+.book-form #save-book{
+    background-color: rgb(41, 41, 248);
+    color: white;
+}
+.fa-heart {
+    color: red;
+}
+.favUpdateBtn{
+    background-color: rgb(41, 41, 248);
+    color: white;
+    width: 25vw;
+    text-align: center;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display: block;
+}
+
